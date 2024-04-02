@@ -2,7 +2,7 @@
 
 namespace Mrkindy\Deadscanner;
 
-use Mrkindy\Deadscanner\Console\Commands\DeadClasses;
+use Mrkindy\Deadscanner\Console\Commands\DeadController;
 use Mrkindy\Deadscanner\Console\Commands\DeadMethods;
 
 use Illuminate\Support\ServiceProvider;
@@ -18,7 +18,7 @@ class DeadScannerServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                DeadClasses::class,
+                DeadController::class,
                 DeadMethods::class,
             ]);
         }

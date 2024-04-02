@@ -79,7 +79,7 @@ class DeadMethods extends Command
         else
         {
             // If not provided, set the default path to the 'app' directory
-            $paths = [app_path(), resource_path('views')];
+            $paths = [app_path("Http/Controllers"), resource_path('views')];
         }
 
         // Store the default paths in the $defaultPaths property

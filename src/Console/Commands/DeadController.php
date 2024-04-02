@@ -8,11 +8,11 @@ use Illuminate\Support\Str;
 use Route;
 
 /**
- * The DeadClasses command.
+ * The DeadController command.
  *
  * This command is used to find unused classes in the application.
  */
-class DeadClasses extends Command
+class DeadController extends Command
 {
         /**
          * The default paths to search for classes.
@@ -54,14 +54,14 @@ class DeadClasses extends Command
      *
      * @var string
      */
-    protected $signature = 'mrkindy:deadclasses {paths?*} {--dump-output} {--text-output}';
+    protected $signature = 'mrkindy:deadcontroller {paths?*} {--dump-output} {--text-output}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Find dead classes';
+    protected $description = 'Find dead controller';
 
     /**
      * Handle the command execution.
@@ -106,7 +106,7 @@ class DeadClasses extends Command
         else
         {
             // If not provided, set the default path to the 'app' directory
-            $paths = [app_path()];
+            $paths = [app_path("Http/Controllers")];
         }
 
         // Store the default paths in the $defaultPaths property

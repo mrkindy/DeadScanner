@@ -1,11 +1,11 @@
 
-# DeadScanner: Uncover Unused Code in Your Laravel Projects
+# DeadScanner: Uncover Unused Controller in Your Laravel Projects
 
-**Efficiently identify and prune dead methods and classes to keep your codebase clean and maintainable.**
+**Efficiently identify and prune dead methods and Controllers to keep your codebase clean and maintainable.**
 
 ## Features
 
--   **Pinpoints Unused Methods and Classes:**  Detects methods and classes that aren't actively utilized within your project.
+-   **Pinpoints Unused Methods and Controllers:**  Detects methods and Controllers that aren't actively utilized within your project.
 -   **Customizable Scanning:**  Target specific paths for analysis and exclude namespaces as needed.
 -   **Flexible Output Formats:**  View results concisely in text format or obtain a detailed dump for in-depth analysis.
 -   **Easy Integration:**  Seamlessly integrates into your Laravel workflow with straightforward installation and usage.
@@ -14,22 +14,22 @@
 
 Add DeadScanner to your project using Composer:
 
-```
+``` bash
 composer require mrkindy/deadscanner
 ```
 ## Usage
 
 Run the following commands to scan your project for dead code:
 
--   **Find dead classes:**
+-   **Find dead Controllers:**
         
-    ```
-    php artisan mrkindy:deadclasses
+    ``` bash
+    php artisan mrkindy:deadcontroller
     ```
     
 -   **Find dead methods:**
         
-    ```
+    ``` bash
     php artisan mrkindy:deadmethods
     ```
     

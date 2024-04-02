@@ -1,6 +1,6 @@
 {
     "name": "mrkindy/deadscanner",
-    "description": "console command to list dead methods and classes from Laravel projects. an artisan command away.",
+    "description": "Laravel console command to list dead methods and classes from Laravel projects.",
     "type": "package",
     "keywords": [
         "laravel",

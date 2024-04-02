@@ -1,0 +1,36 @@
+{
+    "name": "mrkindy/deadscanner",
+    "description": "console command to list dead methods and classes from Laravel projects. an artisan command away.",
+    "type": "package",
+    "keywords": [
+        "laravel",
+        "package",
+        "audit",
+        "analysis tool",
+        "dead methods",
+        "dead classes",
+        "artisan command"
+    ],
+    "homepage": "https://mrkindy.com/",
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Mrkindy\\Deadscanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ibrahim Abotaleb",
+            "email": "admin@mrkindy.com"
+        }
+    ],
+    "require": {},
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrkindy\\Deadscanner\\DeadScannerServiceProvider"
+            ]
+        }
+    }
+}
